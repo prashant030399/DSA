@@ -1,5 +1,5 @@
 class M22 {
-    int  x [] = new int[5];
+    int  x [] = new int[10];
     int index=0;
 
 
@@ -37,25 +37,16 @@ void insertpos(int v, int pos)
 }
 
 
-//delete position
-void deletepos(int v, int pos){
-     
-
-}
-
-
 
 //delete at beginning
-void deleteatbeg()
-{
+void deletebeg(int v){
     System.out.print("delete" + x[0]);
-
-    for(int i=0; i< index -1 ; i++){
-        x[i] = x[i+1];
-
-    }
-    index --;
+for(int  i=0 ; i < index -1 ; i++){
+    x[i] = x[i+1];
 }
+index --;
+}
+
 
 
 //delete at last
@@ -63,6 +54,16 @@ void deleteatlast()
 {
     System.out.print("deleted" + x[index -1]   );
     index --;    
+}
+
+
+// delete at position
+void deletepos(int pos ){
+    for(int i=pos - 1; i<index -1 ; i++){
+       x[i] = x[i+1];
+   }
+   index --;
+   System.out.print("Deleted at position " + pos  + "-");
 }
 
 
@@ -78,6 +79,10 @@ void show(){
         M22 x = new M22();
         x.insertbeg(70);
         x.insertbeg(80);
+        x.insertbeg(90);
+        x.insertbeg(100);
+        x.insertbeg(110);
+        
         x.show();
         x.insertatlast(40);
         x.show();
@@ -87,5 +92,10 @@ void show(){
         x.show();
         x.deleteatlast();
         x.show();
+
+        x.deletepos(2);
+        x.show();
+        
+
     }  
 }
