@@ -1,4 +1,4 @@
-//write a java program
+ //write a java program to find length of String
 
 public class problem1{
 
