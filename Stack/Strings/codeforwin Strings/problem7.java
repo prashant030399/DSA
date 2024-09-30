@@ -1,3 +1,5 @@
+// Write a java program to toggle case of each character of a String  
+
 public class problem7 {
 
  public static void main(String[] args) {
