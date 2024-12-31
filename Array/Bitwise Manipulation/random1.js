@@ -25,6 +25,7 @@ var con = mysql.createConnection({
 });
 
 
+    
 var rno = req.query.rno;
 var name = req.query.name;
 var marks = req.query.marks;
