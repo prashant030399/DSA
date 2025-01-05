@@ -21,6 +21,7 @@ System.out.print("inserted" + " ");
 }
 }
 
+
 void display(){
     for(int i = front ; i<=rear ; i++){
         System.out.print(a[i] + " ");
