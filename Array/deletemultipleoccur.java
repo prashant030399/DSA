@@ -6,6 +6,7 @@ public static void main(String args []){
     System.out.print("Enter number to be deleted ");
 int n= sc.nextInt();
 
+    
 int c=0;
 
 int x [] = {10,20,20,30, 30,10,10,40,10,50,60};
