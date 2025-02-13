@@ -3,6 +3,7 @@ class Basicinsert {
 int a [] = new int [5];
 int front = -1 ; int rear = -1;
 
+    
 void insert(int val){
 if(rear >= 4){
     System.out.print("overflow" + " ");
