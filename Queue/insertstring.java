@@ -2,6 +2,7 @@ class Insertstring {
 
 String x [] = new String [5];
 int front = -1; int rear = -1;
+    
 
 void insert(String val){
 
